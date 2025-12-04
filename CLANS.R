@@ -6,7 +6,7 @@ library(factoextra)
 library(ggrepel)
 
 # Read the data
-df <- read.table("clans_2d_DEF.csv", sep="\t", header=TRUE)
+df <- read.table("clans_2d.csv", sep="\t", header=TRUE)
 
 # Elbow method
 fviz_nbclust(df[, c(2,3)], kmeans, method = "wss") +
